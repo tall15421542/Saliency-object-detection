@@ -1,0 +1,3 @@
+/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build/CMakeFiles/rebuild_cache.dir
+/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build/CMakeFiles/edit_cache.dir
+/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build/CMakeFiles/DIP.dir

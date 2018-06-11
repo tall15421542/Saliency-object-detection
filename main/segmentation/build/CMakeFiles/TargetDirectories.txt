@@ -1,0 +1,8 @@
+/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/segmentation/build/CMakeFiles/rebuild_cache.dir
+/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/segmentation/build/CMakeFiles/edit_cache.dir
+/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/segmentation/build/lib/CMakeFiles/rebuild_cache.dir
+/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/segmentation/build/lib/CMakeFiles/edit_cache.dir
+/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/segmentation/build/lib/CMakeFiles/refh.dir
+/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/segmentation/build/cli/CMakeFiles/rebuild_cache.dir
+/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/segmentation/build/cli/CMakeFiles/edit_cache.dir
+/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/segmentation/build/cli/CMakeFiles/refh_cli.dir
