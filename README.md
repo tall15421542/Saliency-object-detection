@@ -34,20 +34,20 @@ ref: [davidstutz's segmentation implement](https://github.com/davidstutz/graph-b
 
 ### Compile
 ```
-/* under main directory */
+/* ./main/ */  
 
 sh build.sh
 sh compile.sh  
 ```
 ### Execute
 ```
-/* Under main directory */
+/* ./main/ */
 
 ./DIP [Path/To/Image]  
 ```
 ## Play with parameter
 ```
-/* under main directory */
+/* ./main/ */  
 
 vim ../saliencyMap.cpp
 sh compile.sh
@@ -60,7 +60,8 @@ All parameters are specified in [Global Contrast Based Salient Region Detection.
 
 There are some options, which are for showing the processing image during the process.
 ```
-cd main  
+/* ./main/ */  
+
 vim CMakeLists.txt /* uncomment your option */
 ```
 
