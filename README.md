@@ -1,7 +1,4 @@
 # Saliency-object-detection
-## Reference paper
-[Ming-Ming Cheng, Niloy J. Mitra, Xiaolei Huang, Philip H. S. Torr, and Shi-Min Hu, “ Global Contrast Based Salient Region Detection IEEE TRAN PATTERN ANALYSIS AND MACHINE INTELLIGENCE,
-VOL. 37, NO. 3, p.569-p.582, MARCH 2015](https://ieeexplore.ieee.org/document/6871397/)
 
 ## Dependency
 ``CMAKE 3.11.3``
@@ -76,3 +73,8 @@ Some of the images may lead to segmentation fault due to our function ``find_lar
  ![](https://github.com/tall15421542/Saliency-object-detection/blob/master/result_img/bear2.png)
  ---
  ![](https://github.com/tall15421542/Saliency-object-detection/blob/master/result_img/pika.png)
+ 
+ ## Reference paper
+[Ming-Ming Cheng, Niloy J. Mitra, Xiaolei Huang, Philip H. S. Torr, and Shi-Min Hu, “ Global Contrast Based Salient Region Detection IEEE TRAN PATTERN ANALYSIS AND MACHINE INTELLIGENCE,
+VOL. 37, NO. 3, p.569-p.582, MARCH 2015](https://ieeexplore.ieee.org/document/6871397/)
+
