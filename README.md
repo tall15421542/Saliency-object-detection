@@ -2,27 +2,30 @@
 ## Implement paper
 [Ming-Ming Cheng, Niloy J. Mitra, Xiaolei Huang, Philip H. S. Torr, and Shi-Min Hu, “ Global Contrast Based Salient Region Detection IEEE TRAN PATTERN ANALYSIS AND MACHINE INTELLIGENCE,
 VOL. 37, NO. 3, p.569-p.582, MARCH 2015](https://ieeexplore.ieee.org/document/6871397/)
- 
+
 ## Dependency
 ``CMAKE 3.11.3``
 ``OPENCV 3.5.1_5``
 
 ## Directory
+```
 .  
 ├── main      
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── dip.cpp                   # our main source code    
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── CMakeList.txt             # cmake configuration, which includes some options to print processing image   
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── compile.sh                # function like makefile   
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── segementation             # segementation algorithm implement by [davidstutz](https://github.com/davidstutz/graph-based-image-segmentation)   
+    ├── dip.cpp                   # our main source code    
+    ├── CMakeList.txt             # cmake configuration, which includes some options to print processing image   
+    ├── compile.sh                # function like makefile   
+    ├── segementation             # segementation algorithm implement by davidstutz
 ├── include                       # implement region based saliency    
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── saliencyMap.hpp                
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── saliencyMap.cpp    
+    ├── saliencyMap.hpp                
+    ├── saliencyMap.cpp    
 ├── test_img                      # Some test image    
 ├── result_img                    # Result from test image    
 ├── Global\ Contrast\ Based\ Salient\ Region\ Detection.pdf   # Our slides in pdf format    
 ├── Global\ Contrast\ Based\ Salient\ Region\ Detection.pptx  # Our slides in pptx format    
 ├── Team4_ProposalReport.pdf                                  # Our proposal    
-└── README.md                   
+└── README.md  
+```
+ref: [davidstutz's segmentation implement](https://github.com/davidstutz/graph-based-image-segmentation)   
 
 
 ## Usage
