@@ -13,7 +13,8 @@ VOL. 37, NO. 3, p.569-p.582, MARCH 2015](https://ieeexplore.ieee.org/document/68
 ├── main      
     ├── dip.cpp                   # our main source code    
     ├── CMakeList.txt             # cmake configuration, which includes some options to print processing image   
-    ├── compile.sh                # function like makefile   
+    ├── compile.sh                # compile   
+    ├── build.sh                  # cmake
     ├── segementation             # segementation algorithm implement by davidstutz
 ├── include                       # implement region based saliency    
     ├── saliencyMap.hpp                
@@ -33,16 +34,15 @@ ref: [davidstutz's segmentation implement](https://github.com/davidstutz/graph-b
 
 ### Compile
 ```
-cd main  
-mkdir build  
-cd build  
-cmake ..  
-cd ../  
+/* under main directory */
+
+sh build.sh
 sh compile.sh  
 ```
 ### Execute
 ```
 /* Under main directory */
+
 ./DIP [path/to/image]  
 ```
 ## Options
@@ -50,8 +50,7 @@ sh compile.sh
 There are some options, which are for showing the processing image during the process.
 ```
 cd main  
-vi CMakeLists.txt
-uncomment your option
+vim CMakeLists.txt /* uncomment your option */
 ```
 
 ![alt](https://github.com/tall15421542/Saliency-object-detection/blob/master/img/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-06-25%20%E4%B8%8B%E5%8D%886.26.50.png)
