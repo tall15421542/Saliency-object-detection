@@ -33,6 +33,9 @@ ref: [davidstutz's segmentation implement](https://github.com/davidstutz/graph-b
 ## Usage
 
 All operation is under ``main/``
+```
+cd main/
+```
 
 ### Compile
 ```
