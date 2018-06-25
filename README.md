@@ -1,5 +1,5 @@
 # Saliency-object-detection
-## Implement paper
+## Reference paper
 [Ming-Ming Cheng, Niloy J. Mitra, Xiaolei Huang, Philip H. S. Torr, and Shi-Min Hu, “ Global Contrast Based Salient Region Detection IEEE TRAN PATTERN ANALYSIS AND MACHINE INTELLIGENCE,
 VOL. 37, NO. 3, p.569-p.582, MARCH 2015](https://ieeexplore.ieee.org/document/6871397/)
 
