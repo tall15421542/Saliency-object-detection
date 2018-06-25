@@ -53,7 +53,7 @@ vi CMakeLists.txt
  
 Some of the images may lead to segmentation fault due to our function ``find_largest_connect_region`` can not handle the cases when the connected region grows too large.
 
-Result
+## Result
 
  ![](https://github.com/tall15421542/Saliency-object-detection/blob/master/test_img/plane.jpg) 
  ![](https://github.com/tall15421542/Saliency-object-detection/blob/master/result_img/plane.png) 
