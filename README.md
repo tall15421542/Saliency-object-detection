@@ -55,7 +55,7 @@ All parameters are specified in [Global Contrast Based Salient Region Detection.
 
 ### Options
 
-There are some options, which are for showing the processing image during the process.
+There are some options for showing addtional image during the process.
 ```
 vim CMakeLists.txt /* uncomment your option */
 ```
