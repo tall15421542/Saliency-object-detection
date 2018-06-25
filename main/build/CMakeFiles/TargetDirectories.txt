@@ -1,3 +1,0 @@
-/Users/tall154215452/Desktop/Saliency-object-detection/main/build/CMakeFiles/rebuild_cache.dir
-/Users/tall154215452/Desktop/Saliency-object-detection/main/build/CMakeFiles/edit_cache.dir
-/Users/tall154215452/Desktop/Saliency-object-detection/main/build/CMakeFiles/DIP.dir
