@@ -61,11 +61,8 @@ Some of the images may lead to segmentation fault due to our function ``find_lar
 
 ## Result
 
- ![](https://github.com/tall15421542/Saliency-object-detection/blob/master/test_img/plane.jpg) 
  ![](https://github.com/tall15421542/Saliency-object-detection/blob/master/result_img/plane.png) 
  ---
- ![](https://github.com/tall15421542/Saliency-object-detection/blob/master/test_img/bear2.jpg)
  ![](https://github.com/tall15421542/Saliency-object-detection/blob/master/result_img/bear2.png)
  ---
- ![](https://github.com/tall15421542/Saliency-object-detection/blob/master/test_img/pika.jpg)
  ![](https://github.com/tall15421542/Saliency-object-detection/blob/master/result_img/pika.png)
