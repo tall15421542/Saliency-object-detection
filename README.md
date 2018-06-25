@@ -50,7 +50,7 @@ sh compile.sh
 There are some options, which are for showing the processing image during the process.
 ```
 cd main  
-vi CMakeLists.txt
+vim CMakeLists.txt
 uncomment your option
 ```
 
