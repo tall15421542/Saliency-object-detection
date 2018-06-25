@@ -36,19 +36,16 @@ All operation is under ``main/``
 ```
 cd main/
 ```
----
 ### Compile
 
 ```
 sh build.sh
 sh compile.sh  
 ```
----
 ### Execute
 ```
 ./DIP [Path/To/Image]  
 ```
----
 ### Play with parameter
 ```
 vim ../saliencyMap.cpp
@@ -59,7 +56,6 @@ sh compile.sh
 
 All parameters are specified in [Global Contrast Based Salient Region Detection.pdf](https://github.com/tall15421542/Saliency-object-detection/blob/master/Global%20Contrast%20Based%20Salient%20Region%20Detection.pdf)
 
----
 ### Options
 
 There are some options, which are for showing the processing image during the process.
