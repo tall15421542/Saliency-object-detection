@@ -15,7 +15,7 @@ VOL. 37, NO. 3, p.569-p.582, MARCH 2015](https://ieeexplore.ieee.org/document/68
     ├── CMakeList.txt             # cmake configuration, which includes some options to print processing image   
     ├── compile.sh                # compile   
     ├── build.sh                  # cmake
-    ├── segementation             # segementation algorithm implement by davidstutz
+    ├── segementation             # segementation algorithm implement by davidstutz[1]
 ├── include                       # implement region based saliency    
     ├── saliencyMap.hpp                
     ├── saliencyMap.cpp    
@@ -27,7 +27,7 @@ VOL. 37, NO. 3, p.569-p.582, MARCH 2015](https://ieeexplore.ieee.org/document/68
 ├── Team4_ProposalReport.pdf                             # Our proposal    
 └── README.md  
 ```
-ref: [davidstutz's segmentation implement](https://github.com/davidstutz/graph-based-image-segmentation)   
+[1] [davidstutz's segmentation implement](https://github.com/davidstutz/graph-based-image-segmentation)   
 
 
 ## Usage
