@@ -13,7 +13,8 @@ VOL. 37, NO. 3, p.569-p.582, MARCH 2015](https://ieeexplore.ieee.org/document/68
 ├── main      
     ├── dip.cpp                   # our main source code    
     ├── CMakeList.txt             # cmake configuration, which includes some options to print processing image   
-    ├── compile.sh                # function like makefile   
+    ├── compile.sh                # compile   
+    ├── build.sh                  # cmake
     ├── segementation             # segementation algorithm implement by davidstutz
 ├── include                       # implement region based saliency    
     ├── saliencyMap.hpp                
@@ -33,16 +34,15 @@ ref: [davidstutz's segmentation implement](https://github.com/davidstutz/graph-b
 
 ### Compile
 ```
-cd main  
-mkdir build  
-cd build  
-cmake ..  
-cd ../  
+/* under main directory */
+
+sh build.sh
 sh compile.sh  
 ```
 ### Execute
 ```
 /* Under main directory */
+
 ./DIP [path/to/image]  
 ```
 ## Options
