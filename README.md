@@ -19,10 +19,11 @@ VOL. 37, NO. 3, p.569-p.582, MARCH 2015](https://ieeexplore.ieee.org/document/68
     ├── saliencyMap.hpp                
     ├── saliencyMap.cpp    
 ├── test_img                      # Some test image    
-├── result_img                    # Result from test image    
-├── Global\ Contrast\ Based\ Salient\ Region\ Detection.pdf   # Our slides in pdf format    
-├── Global\ Contrast\ Based\ Salient\ Region\ Detection.pptx  # Our slides in pptx format    
-├── Team4_ProposalReport.pdf                                  # Our proposal    
+├── result_img                    # Result from test image   
+
+├── Global Contrast Based Salient Region Detection.pdf   # Our slides in pdf format    
+├── Global Contrast Based Salient Region Detection.pptx  # Our slides in pptx format    
+├── Team4_ProposalReport.pdf                             # Our proposal    
 └── README.md  
 ```
 ref: [davidstutz's segmentation implement](https://github.com/davidstutz/graph-based-image-segmentation)   
