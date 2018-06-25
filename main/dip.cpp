@@ -102,6 +102,7 @@ int main(int argc, char *argv[])
     
 	row = myimg.rows;
 	column = myimg.cols;
+    printf("This is a %d x %d image!\n", row, column);
 	
     /* build matrix */
 	build_image_matrix();
@@ -114,6 +115,7 @@ int main(int argc, char *argv[])
 	
     /* quantize image */
     quan_rgb_img = quantizeImage(myimg);
+    printf("finish quantization\n");
 	/* fill data in matrix iamge_lab */
 	cvtColor(quan_rgb_img, lab_img, CV_BGR2Lab);
 	fill_image_lab_matrix(lab_img);
@@ -122,6 +124,7 @@ int main(int argc, char *argv[])
     /* segmentation */
 	remove("./segmentation/output/ok");
 	run_segmentation(myimg, argv[1]);
+    printf("finish segmentation\n");
 
 	while((fp = fopen("./segmentation/output/ok", "r")) == NULL);
 	fp = NULL;
@@ -139,6 +142,7 @@ int main(int argc, char *argv[])
     /* calculate saliency value */
     calculateSaliency(regionArray, regionCount, image_lab, row, column);
 	colorSmooth(regionArray, regionCount, image_lab, row, column);
+    printf("Finish saliency map\n");
     /* this is part of grabcut */
 
 	init_trimap = buildIntMatrix(row, column); /* remember to free */
@@ -198,6 +202,7 @@ int main(int argc, char *argv[])
 	}
 
 	/* pause the program for user viewing imgs */
+    printf("Finish GrabCut!");
 	waitKey(0);
 	return 0;
 }
