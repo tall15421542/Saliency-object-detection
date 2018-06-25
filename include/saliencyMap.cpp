@@ -8,21 +8,18 @@
 #include <limits.h>
 #include "saliencyMap.hpp"
 
-#define BIN_COUNT 12
-#define DELTA_S 0.4
-#define Tb 70
 #define BLACK 0
 #define WHITE 255
+
 #define NUM_BITS 4
+#define BIN_COUNT 12
+
+#define DELTA_S 0.4
+#define Tb 70
 #define COVER_PERCENTAGE 0.9
 #define SMOOTH_RATIO 0.1
 #define S_RATIO 0.5
-/*
-#define PRINT_QUANTIZATION
-#define PRINT_REGION_SALIENCY
-#define PRINT_COLOR_SMOOTH
-#define PRINT_BALANCE
-*/
+
 const int COLOR_NUM = (1 << NUM_BITS);
 
 using namespace std;
