@@ -20,7 +20,7 @@ iostream
 boost/algorithm/string.hpp
 -
 
-/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/include/saliencyMap.cpp
+/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp
 stdio.h
 -
 stdlib.h
@@ -38,9 +38,9 @@ opencv2/opencv.hpp
 limits.h
 -
 saliencyMap.hpp
-/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/include/saliencyMap.hpp
+/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.hpp
 
-/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/include/saliencyMap.hpp
+/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.hpp
 stdio.h
 -
 stdlib.h
@@ -54,7 +54,7 @@ iostream
 boost/algorithm/string.hpp
 -
 
-/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/dip.cpp
+/Users/tall154215452/Desktop/Saliency-object-detection/main/dip.cpp
 cstdio
 -
 cstring
@@ -72,7 +72,7 @@ opencv2/opencv.hpp
 assert.h
 -
 saliencyMap.hpp
-/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/saliencyMap.hpp
+/Users/tall154215452/Desktop/Saliency-object-detection/main/saliencyMap.hpp
 
 /usr/local/include/boost/algorithm/string.hpp
 boost/algorithm/string/std_containers_traits.hpp

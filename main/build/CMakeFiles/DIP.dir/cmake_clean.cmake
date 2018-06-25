@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DIP.dir/dip.cpp.o"
-  "CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.o"
+  "CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.o"
   "DIP.pdb"
   "DIP"
 )

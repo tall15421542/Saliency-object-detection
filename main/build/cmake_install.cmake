@@ -1,4 +1,4 @@
-# Install script for directory: /Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main
+# Install script for directory: /Users/tall154215452/Desktop/Saliency-object-detection/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/tall154215452/Desktop/Saliency-object-detection/main/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

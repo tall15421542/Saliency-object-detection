@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.11.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main"
+CMAKE_SOURCE_DIR = /Users/tall154215452/Desktop/Saliency-object-detection/main
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build"
+CMAKE_BINARY_DIR = /Users/tall154215452/Desktop/Saliency-object-detection/main/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DIP.dir/depend.make
@@ -59,40 +59,40 @@ include CMakeFiles/DIP.dir/flags.make
 
 CMakeFiles/DIP.dir/dip.cpp.o: CMakeFiles/DIP.dir/flags.make
 CMakeFiles/DIP.dir/dip.cpp.o: ../dip.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DIP.dir/dip.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DIP.dir/dip.cpp.o -c "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/dip.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tall154215452/Desktop/Saliency-object-detection/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DIP.dir/dip.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DIP.dir/dip.cpp.o -c /Users/tall154215452/Desktop/Saliency-object-detection/main/dip.cpp
 
 CMakeFiles/DIP.dir/dip.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DIP.dir/dip.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/dip.cpp" > CMakeFiles/DIP.dir/dip.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tall154215452/Desktop/Saliency-object-detection/main/dip.cpp > CMakeFiles/DIP.dir/dip.cpp.i
 
 CMakeFiles/DIP.dir/dip.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DIP.dir/dip.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/dip.cpp" -o CMakeFiles/DIP.dir/dip.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tall154215452/Desktop/Saliency-object-detection/main/dip.cpp -o CMakeFiles/DIP.dir/dip.cpp.s
 
-CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.o: CMakeFiles/DIP.dir/flags.make
-CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.o: /Users/tall154215452/Desktop/CSIE-106-2/DIP/Final\ Project/implement/src/include/saliencyMap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.o -c "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/include/saliencyMap.cpp"
+CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.o: CMakeFiles/DIP.dir/flags.make
+CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.o: /Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tall154215452/Desktop/Saliency-object-detection/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.o -c /Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp
 
-CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/include/saliencyMap.cpp" > CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.i
+CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp > CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.i
 
-CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/include/saliencyMap.cpp" -o CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.s
+CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp -o CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.s
 
 # Object files for target DIP
 DIP_OBJECTS = \
 "CMakeFiles/DIP.dir/dip.cpp.o" \
-"CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.o"
+"CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.o"
 
 # External object files for target DIP
 DIP_EXTERNAL_OBJECTS =
 
 DIP: CMakeFiles/DIP.dir/dip.cpp.o
-DIP: CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.o
+DIP: CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.o
 DIP: CMakeFiles/DIP.dir/build.make
 DIP: /usr/local/lib/libopencv_stitching.3.4.1.dylib
 DIP: /usr/local/lib/libopencv_superres.3.4.1.dylib
@@ -138,7 +138,7 @@ DIP: /usr/local/lib/libopencv_objdetect.3.4.1.dylib
 DIP: /usr/local/lib/libopencv_imgproc.3.4.1.dylib
 DIP: /usr/local/lib/libopencv_core.3.4.1.dylib
 DIP: CMakeFiles/DIP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable DIP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tall154215452/Desktop/Saliency-object-detection/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable DIP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DIP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -151,6 +151,6 @@ CMakeFiles/DIP.dir/clean:
 .PHONY : CMakeFiles/DIP.dir/clean
 
 CMakeFiles/DIP.dir/depend:
-	cd "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main" "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main" "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build" "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build" "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build/CMakeFiles/DIP.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /Users/tall154215452/Desktop/Saliency-object-detection/main/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/tall154215452/Desktop/Saliency-object-detection/main /Users/tall154215452/Desktop/Saliency-object-detection/main /Users/tall154215452/Desktop/Saliency-object-detection/main/build /Users/tall154215452/Desktop/Saliency-object-detection/main/build /Users/tall154215452/Desktop/Saliency-object-detection/main/build/CMakeFiles/DIP.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/DIP.dir/depend
 

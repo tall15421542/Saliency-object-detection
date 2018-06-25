@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.11.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main"
+CMAKE_SOURCE_DIR = /Users/tall154215452/Desktop/Saliency-object-detection/main
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build"
+CMAKE_BINARY_DIR = /Users/tall154215452/Desktop/Saliency-object-detection/main/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build/CMakeFiles" "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tall154215452/Desktop/Saliency-object-detection/main/build/CMakeFiles /Users/tall154215452/Desktop/Saliency-object-detection/main/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tall154215452/Desktop/Saliency-object-detection/main/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ DIP/fast:
 	$(MAKE) -f CMakeFiles/DIP.dir/build.make CMakeFiles/DIP.dir/build
 .PHONY : DIP/fast
 
-Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.o: Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.o
+Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.o: Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.o
 
-.PHONY : Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.o
+.PHONY : Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.o
 
 # target to build an object file
-Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.o:
-	$(MAKE) -f CMakeFiles/DIP.dir/build.make CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.o
-.PHONY : Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.o
+Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.o:
+	$(MAKE) -f CMakeFiles/DIP.dir/build.make CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.o
+.PHONY : Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.o
 
-Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.i: Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.i
+Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.i: Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.i
 
-.PHONY : Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.i
+.PHONY : Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.i
 
 # target to preprocess a source file
-Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.i:
-	$(MAKE) -f CMakeFiles/DIP.dir/build.make CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.i
-.PHONY : Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.i
+Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.i:
+	$(MAKE) -f CMakeFiles/DIP.dir/build.make CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.i
+.PHONY : Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.i
 
-Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.s: Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.s
+Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.s: Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.s
 
-.PHONY : Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.s
+.PHONY : Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.s
 
 # target to generate assembly for a file
-Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.s:
-	$(MAKE) -f CMakeFiles/DIP.dir/build.make CMakeFiles/DIP.dir/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.s
-.PHONY : Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.cpp.s
+Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.s:
+	$(MAKE) -f CMakeFiles/DIP.dir/build.make CMakeFiles/DIP.dir/Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.s
+.PHONY : Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.cpp.s
 
 dip.o: dip.cpp.o
 
@@ -186,9 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DIP"
-	@echo "... Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.o"
-	@echo "... Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.i"
-	@echo "... Users/tall154215452/Desktop/CSIE-106-2/DIP/Final_Project/implement/src/include/saliencyMap.s"
+	@echo "... Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.o"
+	@echo "... Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.i"
+	@echo "... Users/tall154215452/Desktop/Saliency-object-detection/include/saliencyMap.s"
 	@echo "... dip.o"
 	@echo "... dip.i"
 	@echo "... dip.s"

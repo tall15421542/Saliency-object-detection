@@ -139,7 +139,6 @@ int main(int argc, char *argv[])
     /* calculate saliency value */
     calculateSaliency(regionArray, regionCount, image_lab, row, column);
 	colorSmooth(regionArray, regionCount, image_lab, row, column);
-#ifdef GRAB_CUT
     /* this is part of grabcut */
 
 	init_trimap = buildIntMatrix(row, column); /* remember to free */
@@ -200,7 +199,6 @@ int main(int argc, char *argv[])
 
 	/* pause the program for user viewing imgs */
 	waitKey(0);
-#endif
 	return 0;
 }
 

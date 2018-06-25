@@ -54,10 +54,10 @@ RM = /usr/local/Cellar/cmake/3.11.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main"
+CMAKE_SOURCE_DIR = /Users/tall154215452/Desktop/Saliency-object-detection/main
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build"
+CMAKE_BINARY_DIR = /Users/tall154215452/Desktop/Saliency-object-detection/main/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/DIP.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/im
 CMakeFiles/DIP.dir/all:
 	$(MAKE) -f CMakeFiles/DIP.dir/build.make CMakeFiles/DIP.dir/depend
 	$(MAKE) -f CMakeFiles/DIP.dir/build.make CMakeFiles/DIP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build/CMakeFiles" --progress-num=1,2,3 "Built target DIP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/tall154215452/Desktop/Saliency-object-detection/main/build/CMakeFiles --progress-num=1,2,3 "Built target DIP"
 .PHONY : CMakeFiles/DIP.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/DIP.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DIP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build/CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tall154215452/Desktop/Saliency-object-detection/main/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DIP.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tall154215452/Desktop/Saliency-object-detection/main/build/CMakeFiles 0
 .PHONY : CMakeFiles/DIP.dir/rule
 
 # Convenience name for target.

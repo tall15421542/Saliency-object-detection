@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_FLAGS =   -std=gnu++11
 
-CXX_DEFINES = 
+CXX_DEFINES = -DPRINT_BALANCE -DPRINT_COLOR_SMOOTH -DPRINT_QUANTIZATION -DPRINT_REGION_SALIENCY
 
-CXX_INCLUDES = -isystem /usr/local/include -isystem /usr/local/include/opencv -I"/Users/tall154215452/Desktop/CSIE-106-2/DIP/Final Project/implement/src/main/../include" 
+CXX_INCLUDES = -isystem /usr/local/include -isystem /usr/local/include/opencv -I/Users/tall154215452/Desktop/Saliency-object-detection/main/../include 
 

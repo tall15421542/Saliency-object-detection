@@ -10,13 +10,19 @@
 
 #define BIN_COUNT 12
 #define DELTA_S 0.4
-#define Tb 50
+#define Tb 70
 #define BLACK 0
 #define WHITE 255
 #define NUM_BITS 4
 #define COVER_PERCENTAGE 0.9
 #define SMOOTH_RATIO 0.1
 #define S_RATIO 0.5
+/*
+#define PRINT_QUANTIZATION
+#define PRINT_REGION_SALIENCY
+#define PRINT_COLOR_SMOOTH
+#define PRINT_BALANCE
+*/
 const int COLOR_NUM = (1 << NUM_BITS);
 
 using namespace std;
@@ -79,7 +85,7 @@ void fileGreyImage(unsigned char** imageData, int rowSize, int colSize, const ch
     fclose(fp);
 }
 
-void printSaliencyMap(struct region* regionArray, int regionNum, int rowSize, int colSize){
+void printSaliencyMap(struct region* regionArray, int regionNum, int rowSize, int colSize, const char* fileName){
     unsigned char** saliencyMap = new unsigned char*[rowSize];
     for(int row = 0 ; row < rowSize ; row++){
         saliencyMap[row] = new unsigned char[colSize];
@@ -91,7 +97,7 @@ void printSaliencyMap(struct region* regionArray, int regionNum, int rowSize, in
             saliencyMap[row][col] = regionArray[region].saliency;
         }
     }
-    fileGreyImage(saliencyMap, rowSize, colSize, "../img/salincy_smooth.raw");
+    fileGreyImage(saliencyMap, rowSize, colSize, fileName);
 }
 /* this part is for quantizing the image to numBits */
 /***************************************************/
@@ -243,6 +249,9 @@ cv::Mat quantizeImage(const cv::Mat& inImage)
     /* replace old by new in the image */
     reduceImage(retImage, colorToColor);
     delete[](rgbArray);
+#ifdef PRINT_QUANTIZATION
+    imshow("quantizstion", retImage);
+#endif
     return retImage;
 }
 
@@ -494,7 +503,9 @@ void calculateSaliency(struct region* regionArray, int regionNum, char*** lab,
     }
     normalizeSaliency(regionArray, regionNum);
     freeDoubleMatrix(regionLookupTable, regionNum);
-    printSaliencyMap(regionArray, regionNum, rowSize, colSize);
+#ifdef PRINT_REGION_SALIENCY
+    printSaliencyMap(regionArray, regionNum, rowSize, colSize, "../img/region_saliency.raw");
+#endif
 }
 
 /* this part is for color smoothing */
@@ -656,11 +667,18 @@ void colorSmooth(struct region* regionArray, int regionNum, char*** lab, int row
     /* normalize saliency from 0 to 255 */
     normalizeSaliency(regionArray, regionNum);
 
+#ifdef PRINT_COLOR_SMOOTH
+    printSaliencyMap(regionArray, regionNum, rowSize, colSize, "../img/color_smooth.raw");
+#endif
+
     /* balance afrer normalize */
     balanceSaliency(regionArray, regionNum);
 
+#ifdef PRINT_BALANCE
+    printSaliencyMap(regionArray, regionNum, rowSize, colSize, "../img/balance.raw");
+#endif
+
     /* print saliency map */
-    printSaliencyMap(regionArray, regionNum, rowSize, colSize);
     delete[](oldSaliency);
 }
 
