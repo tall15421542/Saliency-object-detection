@@ -30,6 +30,8 @@ ref: [davidstutz's segmentation implement](https://github.com/davidstutz/graph-b
 
 
 ## Usage
+
+### Compile
 ```
 cd main  
 mkdir build  
@@ -37,6 +39,10 @@ cd build
 cmake ..  
 cd ../  
 sh compile.sh  
+```
+### Execute
+```
+/* Under main directory */
 ./DIP [path/to/image]  
 ```
 ## Options
