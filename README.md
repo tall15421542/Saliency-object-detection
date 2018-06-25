@@ -32,7 +32,7 @@ ref: [davidstutz's segmentation implement](https://github.com/davidstutz/graph-b
 
 ## Usage
 
-All operation is under ``main/``
+All operations are under ``main/``
 ```
 cd main/
 ```
