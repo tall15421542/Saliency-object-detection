@@ -7,22 +7,9 @@
 #include <opencv2/opencv.hpp>
 #include <limits.h>
 #include "saliencyMap.hpp"
-
-#define BLACK 0
-#define WHITE 255
-
-#define NUM_BITS 4
-#define BIN_COUNT 12
-
-#define DELTA_S 0.4
-#define Tb 70
-#define COVER_PERCENTAGE 0.9
-#define SMOOTH_RATIO 0.1
-#define S_RATIO 0.5
+using namespace std;
 
 const int COLOR_NUM = (1 << NUM_BITS);
-
-using namespace std;
 
 double** regionLookupTable;
 int labToIntLookupTable[100][255][255] = {{{}}};
@@ -72,7 +59,7 @@ int labToInt(char lab[3]){
 	return ret;
 }
 
-/* output grey level image */ 
+/* output grey level image */
 void fileGreyImage(unsigned char** imageData, int rowSize, int colSize, const char* fileName){
     FILE *fp = fopen(fileName, "wb");
     assert(fp != NULL);
@@ -104,7 +91,7 @@ void updateRGB_map(unordered_map<int, int> &histogram, int r, int g, int b){
     int hashInt = rgbToInt(r, g, b);
     unordered_map<int, int>::iterator it;
     /* if color exist */
-    if((it = histogram.find(hashInt)) != histogram.end()){ 
+    if((it = histogram.find(hashInt)) != histogram.end()){
         it->second ++;
     }
     /* if color appear in the first time */
@@ -196,7 +183,7 @@ void reduceImage(cv::Mat& image, unordered_map<int, int> &colorToColor){
             int inputRGB[3];
             int outputRGB[3];
             cv::Vec3b valVec = image.at<cv::Vec3b>(row, col);
-            inputRGB[0] = valVec[0]; 
+            inputRGB[0] = valVec[0];
             inputRGB[1] = valVec[1];
             inputRGB[2] = valVec[2];
 
@@ -263,7 +250,7 @@ void initializeCentroid(struct region* A, int regionCount){
         for(int index = 0 ; index < A[no].area; index++){
             row += A[no].pointArray[index].row;
             col += A[no].pointArray[index].col;
-        } 
+        }
         A[no].centroid.row = row / double(A[no].area);
         A[no].centroid.col = col / double(A[no].area);
     }
@@ -275,7 +262,7 @@ void updateLAB_map(unordered_map<int, int> &histogram, char lab[3]){
     int hashInt = labToInt(lab);
     unordered_map<int, int>::iterator it;
     /* if color exist */
-    if((it = histogram.find(hashInt)) != histogram.end()){ 
+    if((it = histogram.find(hashInt)) != histogram.end()){
         it->second ++;
     }
     /* if color appear in the first time */
@@ -352,9 +339,9 @@ struct region* initializeRegion(char*** lab_image, int** segmentation, int rowSi
     struct region* regionArray;
 	unordered_map<int, int> countMap;
     unordered_map<int, int> indexMap;
-	
+
     makeValueToCountDict(segmentation, rowSize, colSize, countMap);
-    /* allocate meomery for region array 
+    /* allocate meomery for region array
      * and make a dic value -> index in regionArray */
     regionArray = allocateRegionArray(countMap, indexMap);
 
@@ -369,10 +356,10 @@ struct region* initializeRegion(char*** lab_image, int** segmentation, int rowSi
     }
     /* return how many region there exist */
     *regionCount = countMap.size();
-    
+
     /* initialize centroid */
     initializeCentroid(regionArray, *regionCount);
-    
+
     /* initialize histogram */
     initializeHistogram(regionArray, *regionCount, lab_image, rowSize, colSize);
     return regionArray;
@@ -382,19 +369,19 @@ struct region* initializeRegion(char*** lab_image, int** segmentation, int rowSi
 void freeRegionArray(struct region* regionArray, int count){
     for(int index = 0 ; index < count; index++){
         free(regionArray[index].pointArray);
-    } 
+    }
     free(regionArray);
 }
 
 /* this part is for implementing the function calculate saliency value */
 /***********************************************************************/
 
-double pointLabDistance(char a[3], char b[3]){	 
+double pointLabDistance(char a[3], char b[3]){
 	double dis1 = a[0] - b[0];
 	double dis2 = a[1] - b[1];
 	double dis3 = a[2] - b[2];
 	return sqrt(dis1 * dis1 + dis2 * dis2 + dis3 * dis3);
-}						
+}
 
 double** allocateDoubleMatrix(int row, int col){
     double** matrix = new double*[row];
@@ -414,7 +401,7 @@ void freeDoubleMatrix(double** matrix, int row){
 }
 
 /* calculate d_r in formula (7) of paper */
-double regionLabDistance(struct region* regionArray, int indexA, int indexB, char*** lab){	
+double regionLabDistance(struct region* regionArray, int indexA, int indexB, char*** lab){
     if(regionLookupTable[indexA][indexB])
         return regionLookupTable[indexA][indexB];
 
@@ -455,7 +442,7 @@ double priorWeight(struct region A, int centerRow, int centerCol){
 
 /* calculate d_s in formula (7) in the paper */
 double centroidDistance(struct float_point A, struct float_point B, int rowSize, int colSize){
-    return pow((A.row - B.row)/(double)(rowSize) * (A.row - B.row)/(double)(rowSize) 
+    return pow((A.row - B.row)/(double)(rowSize) * (A.row - B.row)/(double)(rowSize)
              + (A.col - B.col)/(double)(colSize) * (A.col - B.col)/(double)(colSize), 0.5);
 }
 
@@ -471,21 +458,21 @@ void normalizeSaliency(struct region* regionArray, int regionNum){
 }
 
 /* initialize array "int2labLookupTable" */
-void initialize_int2labLookupTable()					
+void initialize_int2labLookupTable()
 {
 	for(int i = 0; i < 6620000; i++)
 		intToLAB(i, int2labLookupTable[i]);
 }
 
 /* implementing calculating saliency value for each region */
-void calculateSaliency(struct region* regionArray, int regionNum, char*** lab, 
+void calculateSaliency(struct region* regionArray, int regionNum, char*** lab,
                          const int rowSize, const int colSize){
     initialize_int2labLookupTable();
     regionLookupTable = allocateDoubleMatrix(regionNum, regionNum);
     for(int index = 0 ; index < regionNum; index++){
         double saliency = 0;
         double w_s = priorWeight(regionArray[index], rowSize/2, colSize/2);
-        
+
         for(int region = 0 ; region < regionNum ; region++){
             if(region == index)
                 continue;
@@ -510,7 +497,7 @@ void calculateSaliency(struct region* regionArray, int regionNum, char*** lab,
 
 void updateColorCount(unordered_map<int,int> &colorCount, char* lab){
     int colorInt = labToInt(lab);
-    unordered_map<int, int>::iterator it = colorCount.find(colorInt); 
+    unordered_map<int, int>::iterator it = colorCount.find(colorInt);
     if(it != colorCount.end())
         it->second ++;
     else
@@ -596,7 +583,7 @@ void makeColorToSaliencyDict(unordered_map<int, double> &saliencySum, unordered_
     for(colorIndex = saliencySum.begin(); colorIndex != saliencySum.end(); colorIndex++){
         int colorInt = colorIndex->first, colorNum = saliencySum.size();
         struct lab_dis* lab_dis = new struct lab_dis[colorNum - 1];
-        
+
         /* find m closest color */
         initializeLabDis(lab_dis, colorInt, colorNum, saliencySum);
         int m = max(colorNum * SMOOTH_RATIO, 2);
@@ -609,7 +596,7 @@ void makeColorToSaliencyDict(unordered_map<int, double> &saliencySum, unordered_
         colorToSaliency.insert(make_pair(colorInt, newSaliencyValue));
         delete[](lab_dis);
     }
-} 
+}
 
 void refineSaliencyValue(struct region* regionArray, int regionNum, unordered_map<int, double> colorToSaliency,
                          char*** lab){
@@ -652,7 +639,7 @@ void colorSmooth(struct region* regionArray, int regionNum, char*** lab, int row
     }
     /* calculate old color saliency */
     calColorAverage(saliencySum, colorCount);
-    
+
     /* map color to new saliency */
     unordered_map<int, double> colorToSaliency;
     makeColorToSaliencyDict(saliencySum, colorToSaliency);
@@ -693,6 +680,3 @@ void initializeTrimap(struct region* regionArray, int regionNum, int** trimap, i
         }
     }
 }
-
-
-
