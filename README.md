@@ -51,7 +51,7 @@ sh compile.sh
 ```
 ### Play with parameter
 ```
-vim ../saliencyMap.cpp
+vim ../saliencyMap.hpp
 sh compile.sh
 ./DIP [Path/To/Image]
 ```
