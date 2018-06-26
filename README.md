@@ -57,7 +57,7 @@ sh compile.sh
 ```
 ![](https://github.com/tall15421542/Saliency-object-detection/blob/master/img/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-06-25%20%E4%B8%8B%E5%8D%8810.04.33.png)  
 
-All parameters are specified in [Global Contrast Based Salient Region Detection.pdf](https://github.com/tall15421542/Saliency-object-detection/blob/master/Global%20Contrast%20Based%20Salient%20Region%20Detection.pdf)
+All parameters are specified in [Global Contrast Based Salient Region Detection.pdf](https://github.com/tall15421542/Saliency-object-detection/blob/master/img/parameter.png)
 
 ### Options
 
@@ -66,7 +66,7 @@ There are some options for showing addtional image during the process.
 vim CMakeLists.txt /* uncomment your option */
 ```
 
-![alt](https://github.com/tall15421542/Saliency-object-detection/blob/master/img/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-06-25%20%E4%B8%8B%E5%8D%8810.22.23.png)
+![alt](https://github.com/tall15421542/Saliency-object-detection/blob/master/img/options.png)
 
 ## To be fix
  
