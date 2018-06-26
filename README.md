@@ -4,6 +4,12 @@
 ``CMAKE 3.11.3``
 ``OPENCV 3.5.1_5``
 
+### For Mac
+```
+brew install cmake
+brew install opencv
+```
+
 ## Directory
 ```
 .  
